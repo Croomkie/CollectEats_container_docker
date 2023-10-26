@@ -1,0 +1,6 @@
+{
+    "input": "C:Users/ldp03/source/repos/Croomkie/PoCCollectEatsBack/CollectEatsWeb/swagger.json",
+    "output": "./src/app/api",
+    "ignoreUnusedModels": true,
+    "schema": "angular"
+}

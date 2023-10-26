@@ -1,0 +1,23 @@
+<div class="accueil">
+    <header>
+        <h1>Bienvenue chez CollectEats</h1>
+        <p>Votre plateforme favorite de collection de repas</p>
+    </header>
+    <main>
+        <p>Découvrez une variété de repas et passez votre commande dès aujourd'hui !</p>
+    </main>
+
+    <div class="listRestaurant">
+        <div *ngFor="let restaurant of $listRestaurant | async" class="card">
+            <article style="cursor: default;" (click)="ficheRestaurant(restaurant.id!)">
+                <h2>{{restaurant.nom}}</h2>
+                <p>{{restaurant.telephone}}</p>
+                <p>{{restaurant.adresse?.ville}}</p>
+                <p>{{restaurant.adresse?.ligne1}}</p>
+                <p>{{restaurant.adresse?.codepostal}}</p>
+                <p>{{restaurant.adresse?.region}}</p>
+                <button (click)="ficheRestaurant(restaurant.id!)">collect !</button>
+            </article>
+        </div>
+    </div>    
+</div>

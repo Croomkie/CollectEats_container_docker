@@ -1,0 +1,70 @@
+.restaurant-info {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.restaurant-info h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.restaurant-info p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.restaurant-info .label {
+    font-weight: bold;
+    color: #444;
+    margin-right: 10px;
+}
+
+
+.listePlat {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plat-card {
+    font-family: Arial, sans-serif;
+    width: calc(25% - 10px);
+    margin: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.plat-card:hover {
+    transform: translateY(-10px);
+}
+
+.plat-card h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.plat-card p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.plat-card .label {
+    font-weight: bold;
+    color: #444;
+    margin-right: 10px;
+}

@@ -1,0 +1,18 @@
+<div class="restaurant-info">
+    <h2>{{restaurant.nom}}</h2>
+    <p><span class="label">Téléphone:</span> {{restaurant.telephone}}</p>
+    <p><span class="label">Adresse:</span> {{restaurant.adresse?.ligne1}}</p>
+    <p><span class="label">Pays:</span> {{restaurant.adresse?.pays}}</p>
+    <p><span class="label">Ville:</span> {{restaurant.adresse?.ville}}</p>
+    <p><span class="label">Code Postal:</span> {{restaurant.adresse?.codepostal}}</p>
+    <p><span class="label">Région:</span> {{restaurant.adresse?.region}}</p>
+</div>
+<div class="listePlat">
+    <div class="plat-card" *ngFor="let plat of listePlat">
+        <h2>{{plat.nomplat}}</h2>
+        <p><span class="label">Description:</span> {{plat.description}}</p>
+        <p><span class="label">Prix:</span> {{plat.prixbase}}€</p>
+    </div>
+</div>
+
+

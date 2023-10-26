@@ -1,0 +1,9 @@
+<nav>
+    <ul class="navbar">
+        <li><a href="/">Accueil</a></li>
+        <div>
+            <li *ngIf="!(isLogged | async)"><a (click)="loginKeycloak()">Connexion</a></li>
+            <li *ngIf="isLogged | async"><a (click)="logoutKeycloak()">Déconnexion</a></li>
+        </div>
+    </ul>
+</nav>

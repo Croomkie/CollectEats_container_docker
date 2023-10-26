@@ -1,0 +1,26 @@
+name: .NET CI
+
+on:
+  push:
+    branches: [ main ] # ou remplacer 'main' par le nom de votre branche principale
+  pull_request:
+    branches: [ main ] # de même ici
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0'  # ou la version que vous utilisez
+
+    - name: Build
+      run: dotnet build --configuration Release
+
+    - name: Test
+      run: dotnet test
